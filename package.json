@@ -2,7 +2,6 @@
   "name": "mi-proyecto",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://JoseAntonio7392.github.io/react-github-pages/build",
   "dependencies": {
     "@heroicons/react": "^2.2.0",
     "@react-navigation/native": "^7.0.9",
