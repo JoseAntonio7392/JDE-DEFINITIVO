@@ -51,7 +51,7 @@ function Login({ setIsAuthenticated }) {
         <div className="mb-6">
           <img
             src="/images/main-background.jpg" // Ruta de la imagen
-            alt="Login Image"
+            alt="Login app"
             className="w-48 h-48 object-cover rounded-full"
           />
         </div>

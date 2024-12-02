@@ -1,9 +1,8 @@
 import React, { useState, useEffect } from "react";
-import { getAuth, updateProfile } from "firebase/auth"; // Actualiza la autenticación
-import { getFirestore, doc, setDoc, getDoc } from "firebase/firestore"; // Firestore
+import { updateProfile } from "firebase/auth"; // Actualiza la autenticación
+import { doc, setDoc, getDoc } from "firebase/firestore"; // Firestore
 import { motion } from "framer-motion";
 import { auth, db } from "../components/firebase-config"; // Importar desde la carpeta 'components'
-import { useNavigate } from "react-router-dom"; // Importar useNavigate para redirigir
 
 function Profile() {
   const [user, setUser] = useState(null); // Agregar estado local para el usuario
@@ -14,7 +13,6 @@ function Profile() {
   const [editMode, setEditMode] = useState(false); // Estado de edición
   const [error, setError] = useState(""); // Mensajes de error
   const [loading, setLoading] = useState(true); // Estado de carga
-  const navigate = useNavigate(); // Usamos useNavigate para redirigir
 
   // Obtener el usuario actual desde Firebase Authentication
   useEffect(() => {

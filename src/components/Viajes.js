@@ -9,7 +9,7 @@ function Viajes() {
   const [destinationCoords, setDestinationCoords] = useState([51.505, -0.09]); // Coordenadas de destino inicial
   const [originCoords, setOriginCoords] = useState([51.505, -0.09]); // Coordenadas de origen
   const [duration, setDuration] = useState(""); // Duración estimada
-  const [loading, setLoading] = useState(false); // Estado de carga
+  const [, setLoading] = useState(false); // Estado de carga
 
   const handleOriginChange = (e) => {
     setOrigin(e.target.value); // Actualiza el origen
